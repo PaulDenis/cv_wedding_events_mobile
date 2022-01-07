@@ -7,7 +7,10 @@
 
 <script>
 export default {
-    name: 'PersonalDesc'
+    name: 'PersonalDesc',
+    props: {
+        linguaggio: String
+    }
 }
 </script>
 

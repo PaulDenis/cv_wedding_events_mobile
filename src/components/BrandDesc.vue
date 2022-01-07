@@ -10,7 +10,10 @@
 
 <script>
 export default {
-    name: 'BrandDesc'
+    name: 'BrandDesc',
+    props: {
+        linguaggio: String
+    }
 }
 </script>
 

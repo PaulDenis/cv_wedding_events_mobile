@@ -7,6 +7,8 @@
     :linguaggio="linguaggio"/>
     <BrandDesc 
     :linguaggio="linguaggio"/>
+    <Footer 
+    :linguaggio="linguaggio"/>
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import Header from './components/Header.vue'
 import BrandDesc from './components/BrandDesc.vue'
 import LandingCarousel from './components/LandingCarousel.vue'
 import PersonalDesc from './components/PersonalDesc.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -22,7 +25,8 @@ export default {
     Header,
     BrandDesc,
     LandingCarousel,
-    PersonalDesc
+    PersonalDesc,
+    Footer
   },
   data() {
     return {
