@@ -5,6 +5,7 @@
     :linguaggio="linguaggio"/>
     <LandingCarousel 
     :linguaggio="linguaggio"/>
+    <PersonalDesc />
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import Header from './components/Header.vue'
 import BrandDesc from './components/BrandDesc.vue'
 import LandingCarousel from './components/LandingCarousel.vue'
+import PersonalDesc from './components/PersonalDesc.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     BrandDesc,
-    LandingCarousel
+    LandingCarousel,
+    PersonalDesc
   },
   data() {
     return {
