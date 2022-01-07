@@ -89,7 +89,7 @@ export default {
         left: 50%;
         transform: translate(-50%, -90%);
         width: 90%;
-        padding: 5px 60px;
+        padding: 15px 10px;
         border-radius: 10px;
         text-align: center;
         color: #feb5af;
@@ -125,6 +125,7 @@ export default {
             left: 50%;
             transform: translateX(-50%);
             text-shadow: 1px 1px 3px black;
+            font-size: 20px;
             .fa-chevron-circle-down {
                 // color: #bc8d34;
                 filter: drop-shadow(0px 0px 2px black);
