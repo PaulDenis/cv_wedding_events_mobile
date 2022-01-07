@@ -1,6 +1,6 @@
 !<template>
   <!-- Qui ci sarà la descrizione dell'azienda -->
-  <div class="brand_DescContainer">
+  <div class="brand_DescContainer clearfix">
     <!-- Questo è il logo dell'azienda -->
     <img src="../assets/logo.png" alt="Logo azienda" class="logo_azienda">
     
@@ -17,10 +17,13 @@ export default {
 <style lang="scss" scoped>
 .brand_DescContainer {
   height: 30vh;
+  margin-bottom: 10px;
 }
 .text {
   text-align: justify;
   font-size: 16px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .logo_azienda {
   margin-right: 50px;
@@ -28,6 +31,12 @@ export default {
   float: left;
   shape-outside: circle();
   border-radius: 50%;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 </style>
