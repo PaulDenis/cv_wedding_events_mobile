@@ -103,7 +103,7 @@ export default {
 
         }
         p {
-            font-size: 24px;
+            font-size: 18px;
             color: #bc8d34;
         }
         .block {
