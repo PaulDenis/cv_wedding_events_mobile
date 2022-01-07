@@ -18,6 +18,7 @@ export default {
 .brand_DescContainer {
   height: 30vh;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .text {
   text-align: justify;

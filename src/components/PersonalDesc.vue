@@ -13,7 +13,6 @@ export default {
 
 <style lang="scss" scoped>
 .personal_Desc {
-    margin-top: 10px;
     p {
         padding: 5px;
     }
@@ -22,9 +21,8 @@ export default {
     float: right;
     height: 150px;
     border-radius: 50%;
-    margin-left: 150px;
-
-    shape-outside: ellipse(30% 50% at 90%);
+    margin-left: 50px;
+    shape-outside: ellipse(60% 60% at 90%);
 }
 
 </style>
