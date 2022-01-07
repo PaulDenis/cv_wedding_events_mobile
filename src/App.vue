@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <Header @lingua="lingua"/>
-    <BrandDesc 
+    <PersonalDesc 
     :linguaggio="linguaggio"/>
     <LandingCarousel 
     :linguaggio="linguaggio"/>
-    <PersonalDesc />
+    <BrandDesc 
+    :linguaggio="linguaggio"/>
   </div>
 </template>
 
