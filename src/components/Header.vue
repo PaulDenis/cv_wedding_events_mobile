@@ -58,7 +58,7 @@ export default {
         float: right;
         position: relative;
         z-index: 2;
-        background-color: rgba(256, 256, 256, 0.4);
+        background-color: rgba(256, 256, 256, 0.7);
         &::after {
             content: "";
             display: table;
@@ -67,9 +67,12 @@ export default {
     }
     .lingue {
         position: relative;
-        width: 15px;
+        width: 20px;
         margin: 10px;
         z-index: 2;
+        i {
+            margin: 10px;
+        }
         &:hover {
             cursor: pointer;
         }
@@ -86,6 +89,7 @@ export default {
         left: 50%;
         transform: translate(-50%, -90%);
         width: 90%;
+        padding: 5px 60px;
         border-radius: 10px;
         text-align: center;
         color: #feb5af;
@@ -99,7 +103,7 @@ export default {
 
         }
         p {
-            font-size: 20px;
+            font-size: 24px;
             color: #bc8d34;
         }
         .block {
@@ -122,6 +126,7 @@ export default {
             transform: translateX(-50%);
             text-shadow: 1px 1px 3px black;
             .fa-chevron-circle-down {
+                // color: #bc8d34;
                 filter: drop-shadow(0px 0px 2px black);
                 animation: up_and_down 2s infinite;
             }
