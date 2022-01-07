@@ -80,7 +80,7 @@ export default {
     }
     .landing_page {
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         overflow: hidden;
     }
     .center {
@@ -116,7 +116,7 @@ export default {
     }
     .scroll {
         position: relative;
-        top: -250px;
+        top: -200px;
         z-index: 2;
         color: white;
         h1 {
