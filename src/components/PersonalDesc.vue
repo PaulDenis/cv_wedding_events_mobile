@@ -16,7 +16,10 @@ export default {
 
 <style lang="scss" scoped>
 .personal_Desc {
-    padding-top: 10px;
+    padding: 10px;
+    margin-top: -50px;
+    text-align: right;
+    text-align: justify;
     p {
         padding: 5px;
     }
@@ -25,8 +28,8 @@ export default {
     float: right;
     height: 150px;
     border-radius: 50%;
-    margin-left: 50px;
-    shape-outside: ellipse(60% 60% at 90%);
+    margin-left: 30px;
+    shape-outside: circle();
 }
 
 </style>
