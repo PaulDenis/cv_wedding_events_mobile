@@ -23,8 +23,8 @@
           </li>
       </ul>
       <div class="creator">
-        <img src="../assets/DenixLogo.png" alt="Creator Logo">
         <p>Created by <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+        <img src="../assets/DenixLogo.png" alt="Creator Logo">
       </div>
       <p class="copy">&copy; Copyright protected</p>
   </div>
@@ -76,6 +76,8 @@ export default {
 }
 .creator {
   position: absolute;
+  display: flex;
+  align-items: center;
   bottom: 15px;
   right: 10px;
   text-align: right;
