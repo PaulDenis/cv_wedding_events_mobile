@@ -23,11 +23,11 @@ export default {
   margin-bottom: 10px;
   margin-top: 20px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .text {
   text-align: justify;
   font-size: 16px;
-  padding-right: 5px;
 }
 .logo_azienda {
   margin-right: 50px;
