@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 .personal_Desc {
+    padding-top: 10px;
     p {
         padding: 5px;
     }

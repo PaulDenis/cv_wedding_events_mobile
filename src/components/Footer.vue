@@ -2,11 +2,11 @@
   <div class="footer">
       <ul class="contatti">
           <li>Contatti</li>
-          <li><a href="mailto:castellazzivalentina0@gmail.com"><i class="far fa-envelope"> email</i></a></li>
-          <li>Indirizzo ufficio</li>
-          <li>Numero di telefono</li>
-      </ul>
-      <ul class="inline_menu">
+          <li><a href="mailto:castellazzivalentina0@gmail.com"><i class="far fa-envelope"> castellazzivalentina0@gmail.com</i></a></li>
+          <li>Via Roma n°1, Modena (MO)</li>
+          <li>+39 123 123 1234</li>
+          <li>
+            <ul class="inline_menu">
         <li>
           <a href="https://www.instagram.com/cv_weddingsandevents/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
@@ -20,6 +20,12 @@
           <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </li>
       </ul>
+          </li>
+      </ul>
+      <div class="creator">
+        <img src="../assets/DenixLogo.png" alt="Creator Logo">
+        <p>Created by <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+      </div>
       <p class="copy">&copy; Copyright protected</p>
   </div>
 </template>
@@ -36,23 +42,27 @@ export default {
 <style lang="scss" scoped>
 .footer {
     position: relative;
-    height: 40vh;
+    height: 20vh;
     background-color: gold;
 }
 .contatti {
-    padding-top: 20px;
+    float: left;
+    padding-top: 5px;
     list-style: none;
-    margin-left: 20px;
     color: white;
     li:first-child {
         font-size: 20px;
         font-weight: 800;
     }
+    li {
+      margin: 10px;
+      a {
+        color: white;
+      }
+    }
 }
 .inline_menu {
     list-style: none;
-    margin-left: 20px;
-    margin-top: 20px;
     li {
         display: inline-block;
         margin: 5px;
@@ -63,6 +73,20 @@ export default {
             }
         }
     }
+}
+.creator {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  text-align: right;
+  color: white;
+  img {
+    display: inline-block;
+    height: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
 }
 
 .copy {
