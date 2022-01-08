@@ -2,7 +2,7 @@
   <div class="footer">
       <ul class="contatti">
           <li>Contatti</li>
-          <li><a href="mailto:castellazzivalentina0@gmail.com"><i class="far fa-envelope"> castellazzivalentina0@gmail.com</i></a></li>
+          <li><a action="mailto:castellazzivalentina0@gmail.com" target="_blank"><i class="far fa-envelope"> castellazzivalentina0@gmail.com</i></a></li>
           <li>Via Roma n°1, Modena (MO)</li>
           <li>+39 123 123 1234</li>
           <li>
