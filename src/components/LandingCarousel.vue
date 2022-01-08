@@ -103,12 +103,16 @@ export default {
 .carusel {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 200px;
-    img {
-        position: relative;
-        width: 100%;
-        border-radius: 10px;
+    .carusel_container {
+        height: 100%;
+        img {
+            position: relative;
+            height: 100%;
+            border-radius: 10px;
         }
+    }
 }
 .title {
     margin-bottom: 20px;
