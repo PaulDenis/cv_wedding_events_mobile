@@ -40,10 +40,6 @@ export default {
                 {
                 link: require('../assets/evening_table.jpg'),
                 id: 2
-                },
-                {
-                link: require('../assets/night_event.jpg'),
-                id: 3
                 }],
             current_picture: 0,
             clock: null
