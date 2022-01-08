@@ -4,7 +4,7 @@
     <!-- Questo è il logo dell'azienda -->
     <img src="../assets/logo.png" alt="Logo azienda" class="logo_azienda">
     
-    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis error sapiente, alias rem quasi eveniet odio voluptates accusamus in quas vitae quo reprehenderit doloremque earum commodi, blanditiis ea aliquid soluta fugiat corporis atque dolor voluptate accusantium. Molestiae dolor nisi maiores! Tempora praesentium aut molestias rerum nemo. Ex repellendus cumque delectus labore officia? Sed beatae aut dignissimos enim assumenda quam qui voluptas accusantium rem sint fugiat magni deleniti saepe minus commodi consequuntur eius vitae consectetur suscipit, atque exercitationem, aspernatur architecto quis? Non, nesciunt at dignissimos consequatur officia odio rem animi totam cumque esse inventore nemo quidem numquam iure, dolores reprehenderit eaque?</p>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod at minus fugiat asperiores error velit nisi nesciunt quae, reiciendis repudiandae incidunt. Ipsum iusto obcaecati maxime deleniti odit nostrum soluta consectetur molestiae nam voluptatum, saepe incidunt ipsa similique quis sint ad consequuntur! Unde ab minima saepe cupiditate blanditiis eaque eum facere porro, minus incidunt sed, ullam labore eos officia, commodi consequatur maiores obcaecati ipsa nostrum. Reiciendis quidem veritatis culpa aliquam deleniti!</p>
   </div>
 </template>
 
@@ -19,8 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .brand_DescContainer {
-  height: 30vh;
-  margin-bottom: 10px;
+  height: 25vh;
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -36,7 +35,6 @@ export default {
   shape-outside: circle();
   border-radius: 50%;
 }
-
 .clearfix {
     content: "";
     display: table;
