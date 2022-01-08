@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 .personal_Desc {
     padding: 10px;
-    margin-top: -50px;
+    margin-top: -20px;
     text-align: right;
     text-align: justify;
     p {
