@@ -42,8 +42,8 @@ export default {
 <style lang="scss" scoped>
 .footer {
     position: relative;
-    height: 20vh;
-    background-color: gold;
+    height: 30vh;
+    background-color: #bc8d34;
 }
 .contatti {
     float: left;
