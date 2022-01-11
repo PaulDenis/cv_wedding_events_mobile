@@ -91,48 +91,51 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
-    background-color: #eb98a8;
-    height: 40vh;
-    text-align: center;
-}
-.carusel {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 200px;
-    .carusel_container {
-        height: 100%;
-        img {
-            position: relative;
+    .wrapper {
+        background-color: #eb98a8;
+        text-align: center;
+    }
+    .carusel {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 40vh;
+        .carusel_container {
             height: 100%;
-            border-radius: 10px;
+            img {
+                position: relative;
+                height: 90%;
+                border-radius: 10px;
+            }
         }
     }
-}
-.title {
-    margin-bottom: 20px;
-    color: #bc8d34;
-    text-shadow: 2px 2px 3px black;
-}
-#primary_image {
-    z-index: 3;
-}
-.navigation {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-// .secondary_image {
-//     scale: 0.7;
-//     opacity: .7;
-//     z-index: 0;
-// }
-// .image_left {
-//     transform: translateX(30%);
-// }
-// .image_right {
-//     transform: translateX(-50%);
-// }
+    .title {
+        margin-bottom: 20px;
+        color: #bc8d34;
+        text-shadow: 2px 2px 3px black;
+    }
+    #primary_image {
+        z-index: 3;
+    }
+    .navigation {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    @media  screen and (min-width: 992px) {
+        .wrapper {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            height: auto;
+        }
+        .carusel {
+            height: 60vh;
+        }
+        .navigation {
+            font-size: 40px;
+        }
+    }
+
 
 </style>

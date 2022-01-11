@@ -15,22 +15,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.personal_Desc {
-    padding: 5px;
-    margin-top: -30px;
-    margin-bottom: 10px;
-    text-align: right;
-    text-align: justify;
-    p {
+    .personal_Desc {
         padding: 5px;
+        margin-bottom: 10px;
+        text-align: right;
+        text-align: justify;
+        p {
+            padding: 5px;
+        }
+        &::after {
+            content:"";
+            display: table;
+            clear: both;
+        }
     }
-}
-.personal_img {
-    float: right;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 30px;
-    shape-outside: circle();
-}
+    .personal_img {
+        float: right;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 30px;
+        shape-outside: circle();
+    }
+
+    @media screen and (min-width: 992px) {
+        .personal_Desc {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+
 
 </style>
