@@ -6,7 +6,7 @@
         <div class="navigation_menu" v-if="show" :class="deleting ? 'deleting' : ''">
             <img src="../assets/logo.png" alt="" v-on:click="current_page='home', $emit('pagina', current_page)">
             <i class="fas fa-times" v-on:click="outAnim()"></i>
-            <ul>
+            <ul v-if="linguaggio=='inglese'">
                 <li 
                 v-on:click="current_page='home', $emit('pagina', current_page)"
                 :class="current_page=='home' ? 'current' : ''">Home Page</li>
@@ -19,6 +19,20 @@
                 <li 
                 v-on:click="current_page='contatti', $emit('pagina', current_page)"
                 :class="current_page=='contatti' ? 'current' : ''">Contacts</li>
+            </ul>
+            <ul v-if="linguaggio=='italiano'">
+                <li 
+                v-on:click="current_page='home', $emit('pagina', current_page)"
+                :class="current_page=='home' ? 'current' : ''">Home</li>
+                <li 
+                v-on:click="current_page='galleria', $emit('pagina', current_page)"
+                :class="current_page=='galleria' ? 'current' : ''">Galleria</li>
+                <li 
+                v-on:click="current_page='about us', $emit('pagina', current_page)"
+                :class="current_page=='about us' ? 'current' : ''">Su di noi</li>
+                <li 
+                v-on:click="current_page='contatti', $emit('pagina', current_page)"
+                :class="current_page=='contatti' ? 'current' : ''">Contatti</li>
             </ul>
         </div>
         <!-- <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,6 +58,9 @@
 
 export default {
     name:'NavBar',
+    props: {
+        linguaggio: String
+    },
     data() {
         return {
             show: false,

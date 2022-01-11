@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div class="home" v-if="pagina_corrente == 'home'">
-      <NavBar @pagina="pagina"/>
-      <Header @lingua="lingua"/>
+      <NavBar
+      @pagina="pagina"
+      :linguaggio="linguaggio"/>
+      <Header 
+      @lingua="lingua"/>
       <PersonalDesc 
       :linguaggio="linguaggio"/>
       <LandingCarousel 
@@ -12,16 +15,25 @@
       <Footer 
       :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" v-if="pagina_corrente == 'about us'">
-      <NavBar @pagina="pagina"/>
+    <div class="about_us" 
+    v-if="pagina_corrente == 'about us'">
+      <NavBar 
+      @pagina="pagina"
+      :linguaggio="linguaggio"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" v-if="pagina_corrente == 'galleria'">
-      <NavBar @pagina="pagina"/>
+    <div class="about_us" 
+    v-if="pagina_corrente == 'galleria'">
+      <NavBar 
+      @pagina="pagina"
+      :linguaggio="linguaggio"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" v-if="pagina_corrente == 'contatti'">
-      <NavBar @pagina="pagina"/>
+    <div class="about_us" 
+    v-if="pagina_corrente == 'contatti'">
+      <NavBar 
+      @pagina="pagina"
+      :linguaggio="linguaggio"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
   </div>

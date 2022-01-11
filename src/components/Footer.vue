@@ -1,7 +1,8 @@
 <template>
   <div class="footer">
       <ul class="contatti">
-          <li>Contatti</li>
+          <li v-if="linguaggio=='italiano'">Contatti</li>
+          <li v-if="linguaggio=='inglese'">Contacts</li>
           <li><a href="mailto:castellazzivalentina0@gmail.com" target="_blank"><i class="far fa-envelope"> castellazzivalentina0@gmail.com</i></a></li>
           <li>Via Roma n°1, Modena (MO)</li>
           <li>+39 123 123 1234</li>
@@ -23,10 +24,12 @@
           </li>
       </ul>
       <div class="creator">
-        <p>Created by <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+        <p v-if="linguaggio=='inglese'">Created by <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+        <p v-if="linguaggio=='italiano'">Creato da <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
         <img src="../assets/DenixLogo.png" alt="Creator Logo">
       </div>
-      <p class="copy">&copy; Copyright protected</p>
+      <p class="copy" v-if="linguaggio=='inglese'">&copy; Copyright protected</p>
+      <p class="copy" v-if="linguaggio=='italiano'">&copy; Protetto da copyright</p>
   </div>
 </template>
 
