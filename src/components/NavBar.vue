@@ -80,6 +80,7 @@ nav {
     }
 }
 .navigation_menu {
+    width: 200px;
     background-color: white;
     border: 1px solid black;
     ul {
@@ -87,7 +88,7 @@ nav {
         padding: 0;
         margin: 0;
         li {
-            padding: 2px 10px 2px 10px;
+            padding: 2px 10px 5px 10px;
             &:nth-child(2n-1) {
                 background-color: #ffb5af;
             }
@@ -97,10 +98,11 @@ nav {
         }
     }
     img {
-        height: 20px;
+        height: 30px;
         border-radius: 50%;
         margin: 5px;
         margin-left: 10px;
+        margin-bottom: 15px;
         &:hover {
             cursor: pointer;
         }
@@ -109,8 +111,8 @@ nav {
 }
 .fa-times {
     position: relative;
-    left: 50px;
-    top: 2px;
+    left: 130px;
+    bottom: 3px;
     &:hover {
         cursor: pointer;
     }
@@ -125,7 +127,7 @@ nav {
 @keyframes slide_in {
     0% {
         position: relative;
-        right: 100px;
+        right: 200px;
     }
     100% {
         position: relative;
@@ -139,7 +141,7 @@ nav {
     } 
     100% {
         position: relative;
-        right: 100px;
+        right: 200px;
     }
 }
 

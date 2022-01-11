@@ -7,19 +7,19 @@
           <li>+39 123 123 1234</li>
           <li>
             <ul class="inline_menu">
-        <li>
-          <a href="https://www.instagram.com/cv_weddingsandevents/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@cv_weddingsandevents" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </li>
-        <li>
-          <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-      </ul>
+              <li>
+                <a href="https://www.instagram.com/cv_weddingsandevents/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@cv_weddingsandevents" target="_blank"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
           </li>
       </ul>
       <div class="creator">
@@ -47,6 +47,7 @@ export default {
 }
 .contatti {
     float: left;
+    padding: 0;
     padding-top: 5px;
     list-style: none;
     color: white;
@@ -63,6 +64,7 @@ export default {
 }
 .inline_menu {
     list-style: none;
+    padding: 0;
     li {
         display: inline-block;
         margin: 5px;
