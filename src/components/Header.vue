@@ -13,8 +13,8 @@
 
         <!-- Versione italiana -->
         <div v-show="lingua == 'italiano'" class="center">
-            <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
-            <p>Il tuo evento, quando e come lo vuoi</p>
+            <h1>CV <span class="block">WEDDINGS <span class="gold">&</span> EVENTS</span></h1>
+            <p>I tuoi eventi, quando e come li vuoi</p>
         </div>
                 <div class="scroll" v-show="lingua == 'italiano'">
             <h1>Scorri verso il basso <i class="fas fa-chevron-circle-down"></i></h1>
@@ -22,8 +22,8 @@
 
         <!-- Versione inglese -->
         <div v-show="lingua == 'inglese'" class="center">
-            <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
-            <p>Your event, when and how you want it</p>
+            <h1>CV <span class="block">WEDDINGS <span class="gold">&</span> EVENTS</span></h1>
+            <p>Your events, when and how you want them</p>
         </div>
         <div class="scroll" v-show="lingua == 'inglese'">
             <h1>Scroll down <i class="fas fa-chevron-circle-down"></i></h1>
