@@ -99,18 +99,18 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 40vh;
+        height: 30vh;
         .carusel_container {
+            align-self: center;
             height: 100%;
             img {
                 position: relative;
-                height: 90%;
-                border-radius: 10px;
+                width: 100%;
+                top: 15%;
             }
         }
     }
     .title {
-        margin-bottom: 20px;
         color: #bc8d34;
         text-shadow: 2px 2px 3px black;
     }
@@ -131,6 +131,13 @@ export default {
         }
         .carusel {
             height: 60vh;
+            .carusel_container {
+                img {
+                    top: 0;
+                    width: auto;
+                    height: 100%;
+                }
+            }
         }
         .navigation {
             font-size: 40px;
