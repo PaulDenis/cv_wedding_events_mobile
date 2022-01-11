@@ -70,15 +70,7 @@ export default {
   margin: 0;
   padding: 0;
 }
-.loader_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  .loader {
-    width: 90%;
-    border-radius: 50%
-  }
-}
+
 
 @import'~bootstrap/dist/css/bootstrap.css';
 </style>
