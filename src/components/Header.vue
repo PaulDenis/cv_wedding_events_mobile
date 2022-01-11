@@ -1,34 +1,34 @@
 !<template>
-  <div class="landing_page">
-      <!-- i componenti di fontawesome crea problemi, mettere l'evento su un componente div. -->
-      <div class="container_lingue">
-        <div class="lingue" v-on:click="lingua = 'italiano', $emit('lingua', lingua)">
-            <img src="../assets/bandiere/it.svg" alt="bandiera italia" title="Lingua italiana">
+    <div class="landing_page">
+        <!-- i componenti di fontawesome crea problemi, mettere l'evento su un componente div. -->
+        <div class="container_lingue">
+            <div class="lingue" v-on:click="lingua = 'italiano', $emit('lingua', lingua)">
+                <img src="../assets/bandiere/it.svg" alt="bandiera italia" title="Lingua italiana">
+            </div>
+            <div class="lingue" v-on:click="lingua = 'inglese', $emit('lingua', lingua)">
+                <img src="../assets/bandiere/us.svg" alt="bandiera america" title="English lenguage">
+            </div>
         </div>
-        <div class="lingue" v-on:click="lingua = 'inglese', $emit('lingua', lingua)">
-            <img src="../assets/bandiere/us.svg" alt="bandiera america" title="English lenguage">
+        <img src="../assets/banner_background_2.jpg" alt="" class="ladning_background">
+
+        <!-- Versione italiana -->
+        <div v-show="lingua == 'italiano'" class="center">
+            <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
+            <p>Il tuo evento, quando e come lo vuoi</p>
         </div>
-      </div>
-      <img src="../assets/banner_background_2.jpg" alt="" class="ladning_background">
+                <div class="scroll" v-show="lingua == 'italiano'">
+            <h1>Scorri verso il basso <i class="fas fa-chevron-circle-down"></i></h1>
+        </div>
 
-      <!-- Versione italiana -->
-      <div v-show="lingua == 'italiano'" class="center">
-          <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
-          <p>Il tuo evento, quando e come lo vuoi</p>
-      </div>
-            <div class="scroll" v-show="lingua == 'italiano'">
-        <h1>Scorri verso il basso <i class="fas fa-chevron-circle-down"></i></h1>
-      </div>
-
-      <!-- Versione inglese -->
-      <div v-show="lingua == 'inglese'" class="center">
-          <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
-          <p>Your event, when and how you want it</p>
-      </div>
-      <div class="scroll" v-show="lingua == 'inglese'">
-        <h1>Scroll down <i class="fas fa-chevron-circle-down"></i></h1>
-      </div>
-  </div>
+        <!-- Versione inglese -->
+        <div v-show="lingua == 'inglese'" class="center">
+            <h1>CV <span class="block">WEDDING <span class="gold">&</span> EVENTS</span></h1>
+            <p>Your event, when and how you want it</p>
+        </div>
+        <div class="scroll" v-show="lingua == 'inglese'">
+            <h1>Scroll down <i class="fas fa-chevron-circle-down"></i></h1>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -79,6 +79,7 @@ export default {
 
     }
     .landing_page {
+        position: relative;
         width: 100%;
         height: 95vh;
         overflow: hidden;
@@ -115,8 +116,10 @@ export default {
         }
     }
     .scroll {
-        position: relative;
-        top: -200px;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
         color: white;
         h1 {
@@ -155,6 +158,29 @@ export default {
         }
         100% {
             opacity: 100%;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .ladning_background {
+            width: 100%;
+            height: auto;
+        }
+        .center {
+            width: 40%;
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 28px;
+            }
+        }
+        .scroll {
+            width: 100%;
+            bottom: 5%;
+            h1 {
+                font-size: 40px;
+            }
         }
     }
 </style>
