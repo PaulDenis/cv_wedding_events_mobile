@@ -167,7 +167,7 @@ export default {
             height: auto;
         }
         .center {
-            width: 40%;
+            width: 60%;
             h1 {
                 font-size: 50px;
             }
@@ -181,6 +181,12 @@ export default {
             h1 {
                 font-size: 40px;
             }
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        .center {
+            width: 40%;
         }
     }
 </style>
