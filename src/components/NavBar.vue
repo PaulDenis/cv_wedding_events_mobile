@@ -7,10 +7,18 @@
             <img src="../assets/logo.png" alt="" v-on:click="current_page='home', $emit('pagina', current_page)">
             <i class="fas fa-times" v-on:click="outAnim()"></i>
             <ul>
-                <li v-on:click="current_page='home', $emit('pagina', current_page)">Home Page</li>
-                <li v-on:click="current_page='galleria', $emit('pagina', current_page)">Gallery</li>
-                <li v-on:click="current_page='about us', $emit('pagina', current_page)">About us</li>
-                <li v-on:click="current_page='contatti', $emit('pagina', current_page)">Contacts</li>
+                <li 
+                v-on:click="current_page='home', $emit('pagina', current_page)"
+                :class="current_page=='home' ? 'current' : ''">Home Page</li>
+                <li 
+                v-on:click="current_page='galleria', $emit('pagina', current_page)"
+                :class="current_page=='galleria' ? 'current' : ''">Gallery</li>
+                <li 
+                v-on:click="current_page='about us', $emit('pagina', current_page)"
+                :class="current_page=='about us' ? 'current' : ''">About us</li>
+                <li 
+                v-on:click="current_page='contatti', $emit('pagina', current_page)"
+                :class="current_page=='contatti' ? 'current' : ''">Contacts</li>
             </ul>
         </div>
         <!-- <div class="collapse navbar-collapse" id="navbarNav">
@@ -109,6 +117,9 @@ nav {
 }
 .deleting {
     animation: slide_out 1s;
+}
+.current {
+    border-left: 5px solid #bc8d34;
 }
 
 @keyframes slide_in {
