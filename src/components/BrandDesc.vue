@@ -1,6 +1,6 @@
 !<template>
   <!-- Qui ci sarà la descrizione dell'azienda -->
-  <div class="brand_DescContainer clearfix">
+  <div class="brand_DescContainer clearfix" id="brand">
     <!-- Questo è il logo dell'azienda -->
     <img src="../assets/logo.png" alt="Logo azienda" class="logo_azienda">
     <h1>You are your only limit</h1>

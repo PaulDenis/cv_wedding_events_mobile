@@ -24,8 +24,8 @@
           </li>
       </ul>
       <div class="creator">
-        <p v-if="linguaggio=='inglese'">Created by <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
-        <p v-if="linguaggio=='italiano'">Creato da <a href="http://" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+        <p v-if="linguaggio=='inglese'">Created by <a href="https://www.instagram.com/goddenix/" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
+        <p v-if="linguaggio=='italiano'">Creato da <a href="https://www.instagram.com/goddenix/" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
         <img src="../assets/DenixLogo.png" alt="Creator Logo">
       </div>
       <p class="copy" v-if="linguaggio=='inglese'">&copy; Copyright protected</p>

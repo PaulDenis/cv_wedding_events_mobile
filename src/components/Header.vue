@@ -16,8 +16,8 @@
             <h1>CV <span class="block">WEDDINGS <span class="gold">&</span> EVENTS</span></h1>
             <p>I tuoi eventi, quando e come li vuoi</p>
         </div>
-                <div class="scroll" v-show="lingua == 'italiano'">
-            <h1>Scorri verso il basso <i class="fas fa-chevron-circle-down"></i></h1>
+        <div class="scroll" v-show="lingua == 'italiano'">
+            <a href="#brand" class="invisible_A"><h1>Scorri verso il basso<i class="fas fa-chevron-circle-down"></i></h1></a>
         </div>
 
         <!-- Versione inglese -->
@@ -26,7 +26,7 @@
             <p>Your events, when and how you want them</p>
         </div>
         <div class="scroll" v-show="lingua == 'inglese'">
-            <h1>Scroll down <i class="fas fa-chevron-circle-down"></i></h1>
+            <a href="#brand" class="invisible_A"><h1>Scroll down <i class="fas fa-chevron-circle-down"></i></h1></a>
         </div>
     </div>
 </template>
@@ -114,6 +114,10 @@ export default {
             cursor: pointer;
             background-color: rgba(256, 256, 256, 1);
         }
+    }
+    .invisible_A {
+        text-decoration: none;
+        color: white;
     }
     .scroll {
         position: absolute;
