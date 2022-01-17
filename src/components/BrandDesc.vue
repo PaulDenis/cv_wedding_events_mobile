@@ -13,7 +13,7 @@
       Fare in modo che i vostri sogni si avverino e vedere i vostri volti pieni di gioia è la soddisfazione più grande a cui possa ambire. Dopotutto alle favole ci crediamo un pò tutti... Perchè non trasformarle in realtà?
     </p>
     <p class="text" v-if="linguaggio == 'inglese'">
-      This prhase was, and still is, the principle on which my life is based. It contains the essence of perseverance, of never giving up in front of obstacles and, more important, to always express what you believe in: no one can tell you what you can or can not do, if you really believe in it, you will achieve your goals.
+      This phrase was, and still is, the principle on which my life is based. It contains the essence of perseverance, of never giving up in front of obstacles and, more important, to always express what you believe in: no one can tell you what you can or can not do, if you really believe in it, you will achieve your goals.
       <br>
       It may sound like a clichè, and it is a bit, but it's based on a concept of psychology named "self-fulfilling prophecy". This provecy consist in a forecast that realize itself for the only fact that it was expressed. Why? Because when we really believe in something we act to make it happen. That's why I propose it to you too, because on my mission is based on this: realizing your dreams, at the maximum of possibilyties, to make your day unic and unforgettable... After all is one of the most important days in your life!
       <br>
