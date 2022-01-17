@@ -106,7 +106,6 @@ export default {
             img {
                 position: relative;
                 height: 100%;
-                top: 15%;
             }
         }
     }

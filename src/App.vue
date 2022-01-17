@@ -6,11 +6,11 @@
       :linguaggio="linguaggio"/>
       <Header 
       @lingua="lingua"/>
-      <PersonalDesc 
+      <BrandDesc 
       :linguaggio="linguaggio"/>
       <LandingCarousel 
       :linguaggio="linguaggio"/>
-      <BrandDesc 
+      <PersonalDesc 
       :linguaggio="linguaggio"/>
       <Footer 
       :linguaggio="linguaggio"/>
