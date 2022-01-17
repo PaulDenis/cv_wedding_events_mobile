@@ -9,48 +9,44 @@
             <ul v-if="linguaggio=='inglese'">
                 <li 
                 v-on:click="current_page='home', $emit('pagina', current_page)"
-                :class="current_page=='home' ? 'current' : ''">Home Page</li>
+                :class="pagina_corrente=='home' ? 'current' : ''">Home Page</li>
+                <li 
+                v-on:click="current_page='type of events', $emit('pagina', current_page)"
+                :class="pagina_corrente=='type of events' ? 'current' : ''">Type of events</li>
+                <li 
+                v-on:click="current_page='innovative ideas', $emit('pagina', current_page)"
+                :class="pagina_corrente=='innovative ideas' ? 'current' : ''">Innovative ideas</li>
                 <li 
                 v-on:click="current_page='galleria', $emit('pagina', current_page)"
-                :class="current_page=='galleria' ? 'current' : ''">Gallery</li>
+                :class="pagina_corrente=='galleria' ? 'current' : ''">Gallery</li>
                 <li 
                 v-on:click="current_page='about us', $emit('pagina', current_page)"
-                :class="current_page=='about us' ? 'current' : ''">About us</li>
+                :class="pagina_corrente=='about us' ? 'current' : ''">About us</li>
                 <li 
                 v-on:click="current_page='contatti', $emit('pagina', current_page)"
-                :class="current_page=='contatti' ? 'current' : ''">Contacts</li>
+                :class="pagina_corrente=='contatti' ? 'current' : ''">Contacts</li>
             </ul>
             <ul v-if="linguaggio=='italiano'">
                 <li 
                 v-on:click="current_page='home', $emit('pagina', current_page)"
-                :class="current_page=='home' ? 'current' : ''">Home</li>
+                :class="pagina_corrente=='home' ? 'current' : ''">Home</li>
+                                <li 
+                v-on:click="current_page='type of events', $emit('pagina', current_page)"
+                :class="pagina_corrente=='type of events' ? 'current' : ''">Tipi di eventi</li>
+                <li 
+                v-on:click="current_page='innovative ideas', $emit('pagina', current_page)"
+                :class="pagina_corrente=='innovative ideas' ? 'current' : ''">Idee innovative</li>
                 <li 
                 v-on:click="current_page='galleria', $emit('pagina', current_page)"
-                :class="current_page=='galleria' ? 'current' : ''">Galleria</li>
+                :class="pagina_corrente=='galleria' ? 'current' : ''">Galleria</li>
                 <li 
                 v-on:click="current_page='about us', $emit('pagina', current_page)"
-                :class="current_page=='about us' ? 'current' : ''">Su di noi</li>
+                :class="pagina_corrente=='about us' ? 'current' : ''">Su di noi</li>
                 <li 
                 v-on:click="current_page='contatti', $emit('pagina', current_page)"
-                :class="current_page=='contatti' ? 'current' : ''">Contatti</li>
+                :class="pagina_corrente=='contatti' ? 'current' : ''">Contatti</li>
             </ul>
         </div>
-        <!-- <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            </ul>
-        </div> -->
     </nav>
 </template>
 
@@ -59,7 +55,8 @@
 export default {
     name:'NavBar',
     props: {
-        linguaggio: String
+        linguaggio: String,
+        pagina_corrente: String
     },
     data() {
         return {

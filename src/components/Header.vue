@@ -36,7 +36,7 @@ export default {
     name: 'Header',
     data() {
         return {
-            lingua:"inglese"
+            lingua:"italiano"
         }
     },
     methods: {

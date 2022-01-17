@@ -3,7 +3,8 @@
     <div class="home" v-if="pagina_corrente == 'home'">
       <NavBar
       @pagina="pagina"
-      :linguaggio="linguaggio"/>
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
       <Header 
       @lingua="lingua"/>
       <BrandDesc 
@@ -15,27 +16,47 @@
       <Footer 
       :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" 
+    <div
+    v-if="pagina_corrente == 'type of events'">
+      <NavBar 
+      @pagina="pagina"
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
+      <Manutenzione :linguaggio="linguaggio"/>
+    </div>
+    <div
+    v-if="pagina_corrente == 'innovative ideas'">
+      <NavBar 
+      @pagina="pagina"
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
+      <Manutenzione :linguaggio="linguaggio"/>
+    </div>
+    <div
     v-if="pagina_corrente == 'about us'">
       <NavBar 
       @pagina="pagina"
-      :linguaggio="linguaggio"/>
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" 
+    <div
     v-if="pagina_corrente == 'galleria'">
       <NavBar 
       @pagina="pagina"
-      :linguaggio="linguaggio"/>
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
-    <div class="about_us" 
+    <div
     v-if="pagina_corrente == 'contatti'">
       <NavBar 
       @pagina="pagina"
-      :linguaggio="linguaggio"/>
+      :linguaggio="linguaggio"
+      :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
+
   </div>
 </template>
 
@@ -61,7 +82,7 @@ export default {
   },
   data() {
     return {
-      linguaggio: 'inglese',
+      linguaggio: 'italiano',
       pagina_corrente: 'home'
     }
   },
