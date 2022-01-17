@@ -23,6 +23,7 @@ export default {
         text-align: justify;
         p {
             padding: 5px;
+            font-size: 16px;
         }
         &::after {
             content:"";

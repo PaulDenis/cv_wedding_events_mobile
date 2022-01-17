@@ -114,7 +114,11 @@ export default {
     }
     .title {
         color: #bc8d34;
-        text-shadow: 2px 2px 3px black;
+        text-shadow: 1px 1px 2px black;
+        h1 {
+            font-family: 'Sacramento';
+            font-size: 50px;
+        }
     }
     #primary_image {
         z-index: 3;

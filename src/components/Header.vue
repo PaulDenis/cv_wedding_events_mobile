@@ -94,10 +94,10 @@ export default {
         padding: 15px 10px;
         border-radius: 10px;
         text-align: center;
-        color: #feb5af;
         background-color: rgba(256, 256, 256, 0.7);
         h1 {
             font-size: 30px;
+            font-family: 'Poiret One';
             .gold {
                 color: #bc8d34;
             } 
@@ -105,7 +105,8 @@ export default {
 
         }
         p {
-            font-size: 18px;
+            font-family: 'Sacramento';
+            font-size: 38px;
             color: #bc8d34;
         }
         .block {
@@ -177,7 +178,7 @@ export default {
                 font-size: 50px;
             }
             p {
-                font-size: 28px;
+                font-size: 40px;
             }
         }
         .scroll {

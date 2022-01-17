@@ -103,12 +103,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import'~bootstrap/dist/css/bootstrap.css';
+@import "~@fontsource/poiret-one/index.css";
+@import "~@fontsource/sacramento/index.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poiret One', 'Arial', 'Sans Serif';
 }
 
 
-@import'~bootstrap/dist/css/bootstrap.css';
+
+
 </style>

@@ -39,12 +39,13 @@ export default {
   padding-left: 10px;
   padding-right: 10px;
   h1 {
+    font-family: 'Sacramento';
     color: #bc8d34;
   }
 }
 .text {
   text-align: justify;
-  font-size: 15px;
+  font-size: 16px;
 }
 .logo_azienda {
   margin-right: 30px;
