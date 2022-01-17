@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- trovare un modo per non dover riscrivere l'intera pagina ogni volta -->
     <div class="home" v-if="pagina_corrente == 'home'">
       <NavBar
       @pagina="pagina"
@@ -16,6 +17,7 @@
       <Footer 
       :linguaggio="linguaggio"/>
     </div>
+
     <div
     v-if="pagina_corrente == 'type of events'">
       <NavBar 
@@ -24,6 +26,7 @@
       :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
+
     <div
     v-if="pagina_corrente == 'innovative ideas'">
       <NavBar 
@@ -32,6 +35,7 @@
       :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
+
     <div
     v-if="pagina_corrente == 'about us'">
       <NavBar 
@@ -40,6 +44,7 @@
       :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
+
     <div
     v-if="pagina_corrente == 'galleria'">
       <NavBar 
@@ -48,6 +53,7 @@
       :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
+
     <div
     v-if="pagina_corrente == 'contatti'">
       <NavBar 
@@ -56,7 +62,6 @@
       :pagina_corrente="pagina_corrente"/>
       <Manutenzione :linguaggio="linguaggio"/>
     </div>
-
   </div>
 </template>
 

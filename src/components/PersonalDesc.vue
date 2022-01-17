@@ -1,5 +1,6 @@
 !<template>
   <div class="personal_Desc">
+      <!-- Qui c'è la descrizione personale di Valentina, di com'è e dei suoi ideali -->
       <img src="../assets/Vale.jpeg" alt="Valentina CEO" class="personal_img">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum saepe commodi ducimus consequuntur. Temporibus vero, aliquid sed aspernatur eligendi dolor animi voluptas obcaecati, ipsum, cum accusantium quidem adipisci nostrum laboriosam unde nemo veritatis quas nisi? Vero eum blanditiis cum ut recusandae aut reiciendis dicta illum rerum necessitatibus, molestias, ducimus incidunt!</p>
   </div>

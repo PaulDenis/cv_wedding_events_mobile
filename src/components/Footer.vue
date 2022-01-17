@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
       <ul class="contatti">
+        <!-- Tutti i contatti di Valentina -->
           <li v-if="linguaggio=='italiano'">Contatti</li>
           <li v-if="linguaggio=='inglese'">Contacts</li>
           <li><a href="mailto:castellazzivalentina0@gmail.com" target="_blank"><i class="far fa-envelope"> castellazzivalentina0@gmail.com</i></a></li>
@@ -24,10 +25,12 @@
           </li>
       </ul>
       <div class="creator">
+        <!-- La mia pagina instagram -->
         <p v-if="linguaggio=='inglese'">Created by <a href="https://www.instagram.com/goddenix/" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
         <p v-if="linguaggio=='italiano'">Creato da <a href="https://www.instagram.com/goddenix/" target="_blank" rel="noopener noreferrer">Paul Denis</a></p>
         <img src="../assets/DenixLogo.png" alt="Creator Logo">
       </div>
+      <!-- copyright -->
       <p class="copy" v-if="linguaggio=='inglese'">&copy; Copyright protected</p>
       <p class="copy" v-if="linguaggio=='italiano'">&copy; Protetto da copyright</p>
   </div>

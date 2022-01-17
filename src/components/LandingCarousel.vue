@@ -1,9 +1,12 @@
 !<template>
 <div class="wrapper">
-        <div class="title">
-            <h1 v-if="linguaggio == 'italiano'">Le ultime aggiunte</h1>
-            <h1 v-if="linguaggio == 'inglese'">Latest pictures</h1>
-        </div>
+    <div class="title">
+        <h1 v-if="linguaggio == 'italiano'">Le ultime aggiunte</h1>
+        <h1 v-if="linguaggio == 'inglese'">Latest pictures</h1>
+    </div>
+
+    <!-- L'immagine cambia ogni 6 secondi -->
+    <!-- Aggiungere in futuro un collegamento al server dove si troveranno le foto -->
     <div class="carusel">
         <div v-on:click="goback()">
             <i class="fas fa-chevron-circle-left navigation"></i>

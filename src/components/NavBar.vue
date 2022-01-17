@@ -4,8 +4,11 @@
             <i class="fas fa-bars"></i>
         </div>
         <div class="navigation_menu" v-if="show" :class="deleting ? 'deleting' : ''">
+            <!-- Al click sull'immagine si torna alla home -->
             <img src="../assets/logo.png" alt="" v-on:click="current_page='home', $emit('pagina', current_page)">
             <i class="fas fa-times" v-on:click="outAnim()"></i>
+
+            <!-- menu inglese -->
             <ul v-if="linguaggio=='inglese'">
                 <li 
                 v-on:click="current_page='home', $emit('pagina', current_page)"
@@ -26,6 +29,8 @@
                 v-on:click="current_page='contatti', $emit('pagina', current_page)"
                 :class="pagina_corrente=='contatti' ? 'current' : ''">Contacts</li>
             </ul>
+            
+            <!-- menu italiano -->
             <ul v-if="linguaggio=='italiano'">
                 <li 
                 v-on:click="current_page='home', $emit('pagina', current_page)"

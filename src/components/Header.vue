@@ -2,6 +2,7 @@
     <div class="landing_page">
         <!-- i componenti di fontawesome crea problemi, mettere l'evento su un componente div. -->
         <div class="container_lingue">
+            <!-- Bandiere per cambiare lingua -->
             <div class="lingue" v-on:click="lingua = 'italiano', $emit('lingua', lingua)">
                 <img src="../assets/bandiere/it.svg" alt="bandiera italia" title="Lingua italiana">
             </div>
