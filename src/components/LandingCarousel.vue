@@ -102,7 +102,7 @@ export default {
         height: 30vh;
         .carusel_container {
             align-self: center;
-            height: 100%;
+            height: 90%;
             img {
                 position: relative;
                 width: 100%;
